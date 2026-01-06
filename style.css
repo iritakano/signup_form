@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #748811f5;
+    --blue: #6ca2e8;
+    --orange: #f2600c;
+}
+
+body{
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.img-container img{
+    height: 100vh;
+    width: auto;
+}
+
+.img-container{
+    position: relative;
+}
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    padding: 80px;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+.fieldset-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
+}
+
+fieldset{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+
+fieldset legend{
+    font-size: 1.2rem;
+    background-color: var(--green);
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+
+.inputEl{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.form-container h3{
+    line-height: 1.2;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+    margin-top: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.687);
+}
+
+label{
+    margin-top: 20px;
+}
+
+form button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    background-color: var(--green);
+    border: none;
+    padding: 10px;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.logo p{
+    position: static;
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.logo-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2600cc2;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+input:focus{
+    outline: 2px solid var(--blue);
+    outline-offset: -5px;
+}
+
+button:hover{
+    background-color: #4f5c0bf5;
+    color: white;
+    scale: 1.05;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
